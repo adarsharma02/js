@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="handleSubmit(event)">
+      <label for="">What is the number of players in a cricket team? </label>
+      <input type="number" name="" id="num" />
+      <button type="submit">submit</button>
+      <div id="div"></div>
+    </form>
+
+    <script>
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        const input = document.getElementById("num");
+
+        if (input.value == 11) {
+          const div = (document.getElementById("div").innerText =
+            "you are the great");
+        } else {
+          const div = (document.getElementById("div").innerText =
+            "you are a dumb");
+        }
+      };
+    </script>
+  </body>
+</html>
