@@ -19,7 +19,7 @@ else if (balance < 900) {
 const userLoggedIn = true;
 const debitCard = true;
 const userLoggedInFromgoogle = false;
-const userLoggedInFromgmail = true;
+const userLoggedInFromgmail = false;
 
 if (userLoggedIn && debitCard && 3 == 2) {
   console.log("allow to buy a course");
